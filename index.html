@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="icon"  href="img/page3_2.png">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>维尔莱咖啡馆</title>
+    <style>
+        #loading{
+            top: 0;
+            z-index: 10;
+            background-color: #9f816b;
+        }
+        .loaImg{
+            width: 20%;
+            top:30%;
+            left: 50%;
+            margin-left: -10%;
+            animation: loaImg 8s linear infinite;
+        }
+        .progressBar{
+            position: absolute;
+            width: 50vh;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate3d(-50%,0,0);
+                transform: translate3d(-50%,0,0);
+            height: 5vh;
+            border: 2px #000000 solid;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .bar{
+            width: 100%;
+            height: 5vh;
+            background-color: #5f2304;
+            left: -100%;
+            top: 0;
+        }
+        .progressText{
+            position: absolute;
+            display: block;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate3d(-50%,-50%,0);
+                transform: translate3d(-50%,-50%,0);
+            width: 100%;
+            text-align: center;
+            line-height: 150%;
+        }
+        @keyframes loaImg {
+            from{
+                transform:rotate(0deg);
+            }
+            to{
+                transform:rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div id = "loading">
+            <div class="loaImg"><img src="img/round.png" alt=""></div>
+            <div class="progressBar">
+                <div class="bar"></div>
+                <span class="progressText">0%</span>
+            </div>
+        </div>
+        <div id="page1">
+            <div class="arrow"></div>
+            <img src="img/bg.png" alt="">
+            <div class="leftTop"><img src="img/page1_lt.png" alt=""></div>
+            <div class="rightTop"><img src="img/page1_rt.png" alt=""></div>
+            <div class="leftBottom"><img src="img/page1_lb.png" alt=""></div>
+            <div class="rightBottom"><img src="img/page1_rb.png" alt=""></div>
+            <div class="page1Text"><img src="img/page1Text.png" alt=""></div>
+            <div class="page1_1" ><img src="img/page1_1.png" alt=""></div>
+            <ul class="page1Ul">
+                <li><img src="img/page1_2.png" alt=""><span>美味</span></li>
+                <li><img src="img/page1_2.png" alt=""><span>新鲜</span></li>
+                <li><img src="img/page1_2.png" alt=""><span>香醇</span></li>
+            </ul>
+            <div class="centerBottom"><img src="img/page1_cb.png" alt=""></div>
+        </div>
+        <div id="page2">
+            <div class="arrow"></div>
+            <img src="img/bg.png" alt="">
+            <!-- <span class="titleText">江西省南昌市维尔莱咖啡馆</span> -->
+            <div class="titleBr"><img src="img/page2_1.png" alt=""></div>
+            <div class="page2Wrap1">
+                <div class="page2_2"><img src="img/page2_2.png" alt=""></div>
+                <div class="page2_3"><img src="img/page2_3.png" alt=""></div>
+                <div class="page2Text">
+                    <div class="round"><img src="img/round.png" alt=""></div>
+                    <span class="page2Text1">|关于我们|</span>
+                    <span class="page2Text2">店内陈设优雅、随心、复古,楼梯下的空间被设计成半封闭式的小包间,别有情致。一个雨后的黄昏,倚在咖啡馆的角落逗号俩人窝在舒适的沙发里,听着Hifi音响里播放的蓝调,找寻着迷失的真我</span>
+                </div>
+            </div>
+            <div class="page2_4"><img src="img/page2_4.png" alt=""></div>
+        </div>
+        <div id="page3">
+              <div class="arrow"></div>
+            <!-- <span class="titleText">江西省南昌市维尔莱咖啡馆</span> -->
+            <div class="titleBr"><img src="img/page2_1.png" alt=""></div>
+            <img src="img/bg.png" alt="">
+            <div class="page3Wrap">
+                <div class="page3_1"><img src="img/page3_1.png" alt=""></div>
+                <ul class="page3Ul">
+                    <li><img src="img/page3_2.png" alt=""></li>
+                    <li><img src="img/page3_3.png" alt="">
+                        <div class="page3Mask">
+                            <span class="page3MaskText">品<br><br>质</span>
+                        </div>
+                    </li>
+                    <li><img src="img/page3_4.png" alt=""></li>
+                    <li><img src="img/page3_5.png" alt="">
+                         <div class="page3Mask">
+                            <span class="page3MaskText">优<br><br>雅</span>
+                        </div>
+                    </li>
+                </ul>
+                <!--<div class="page3_2"><img src="img/page3_2.png" alt=""> </div>-->
+            </div>
+            <div class="page3Wrap2">
+                <div class="page3Text1">
+                    <span>|产品介绍|</span>
+                    <span>采用低温烘焙工艺,使咖啡香气更加纯正,咖啡味更浓郁,回味更持久.所用咖啡豆采用上等进口的罗布斯塔咖啡豆,加入适量的牛奶,使咖啡口感更加丰富</span>
+                </div>
+                <div class="spoon"> 
+                    <div class="spoonImg"><img src="img/spoon.png" alt=""></div>
+                </div>
+
+            </div>
+
+        </div>
+        <div id="page4">
+             <div class="arrow"></div>
+            <img src="img/bg.png" alt="">
+            <div class="page4_left">
+                <span>每 <br> 滴 <br> 香 <br> 浓 <br> 郁 <br> 有 <br> 他 <br> 的 <br> 美 <br> 妙</span>
+                <span>完 <br> 整 <br> 保 <br> 留 <br> 咖 <br> 啡 <br> 本 <br> 真 <br> 香</span>
+            </div>
+            <div class="page4Text1">
+                <span>|店长推荐|<br></span>
+                <span>Mangager recommended</span>
+            </div>
+            <div class="page4Wrap" >
+                <div class="page4_1"><img src="img/page4_1.png" alt=""></div>
+                <div class="page4_2"><img src="img/page4_2.png" alt=""></div>
+                <div class="page4_3"><img src="img/page4_3.png" alt=""></div>
+                <div class="page4Text2">
+                    <ul>
+                        <li>>马琪雅朵&nbsp;(Machiatto)</li>
+                        <li>>拿铁咖啡&nbsp;(Caffe)&nbsp;Latte</li>
+                        <li>>卡布奇诺&nbsp;(Cappuccino)</li>
+                        <li>>摩卡咖啡&nbsp;(CafeMocha)</li>
+                        <li>>维也纳咖啡&nbsp;(Viennese)</li>
+                        <li>>爱尔兰咖啡&nbsp;(Irish&nbsp;Coffee)</li>
+                        <li>>美式咖啡&nbsp;(Americano)</li>
+                        <li>>白咖啡&nbsp;(Flat&nbsp;white) </li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="round2"><img src="img/round.png" alt=""></div>
+        </div>
+        <div id="page5">
+              <div class="arrow"></div>
+            <img src="img/bg.png" alt="">
+            <ul class="page5Wrap1">
+
+
+                <li><img src="img/1_171x171.png" alt=""></li>
+                <li><img src="img/2_171x171.png" alt=""></li>
+                <li><img src="img/3_171x171.png" alt=""></li>
+                <li><img src="img/4_171x171.png" alt=""></li>
+                <li><img src="img/5_171x171.png" alt=""></li>
+                <li><img src="img/6_171x171.png" alt=""></li>
+                <li><img src="img/7_171x171.png" alt=""></li>
+                <li><img src="img/8_171x171.png" alt=""></li>
+                <li><img src="img/9_171x171.png" alt=""></li>
+                <div class="mask1">
+                    <span>|精选甜点小吃|</span>
+                    <span>一杯咖啡,一份点心,享受一个人的下午茶.耳边的音乐让你的心或者是波澜壮阔,或是荡漾于宁谧的最值得咀嚼.</span>
+                </div>
+                <div class="mask2"><span>静<br>&nbsp;<br>谧</span></div>
+            </ul>
+            <div class="page5Wrap2">
+                <div class="page5_1"><img src="img/page5_1.png" alt=""></div>
+                <div class="page5Text1">
+                    <span>下午茶时间</span>
+                    <span>Tea time happy hours starts now</span>
+                    <span>每天16:00-17:00</span>
+                    <span>SALE</span>
+                </div>
+                <div class="page5_2"><img src="img/page5_2.png" alt=""></div>
+            </div>
+        </div>
+        <div id="page6">
+            <span class="titleText">订餐预定</span>
+            <div class="titleBr"><img src="img/page2_1.png" alt=""></div>
+            <img src="img/bg.png" alt="">
+            <div class="page6_1"><img src="img/page6_1.png" alt=""></div>
+            <input id="name" type="text" value="姓名" onFocus="get(this)" onBlur="lost(this)"
+                style="color:#999; position: absolute;left:50%;top: 18%; font-size: 1.3em;width: 45vh; -webkit-transform: translate3d(-50%,0,0);
+        transform: translate3d(-50%,0,0);;border:1px solid #5f2304;border-radius:4px; padding-left: 5%">
+             <input id="phoneNumber" type="text" value="手机" onFocus="get(this)" onBlur="lost(this)"
+               style="color:#999; position: absolute;left:50%;top: 26%; font-size: 1.3em;width: 45vh;    -webkit-transform: translate3d(-50%,0,0);
+        transform: translate3d(-50%,0,0);border:1px solid #5f2304;border-radius:4px; padding-left: 5%">
+            <input id="NumberOfMeals" type="text" value="就餐人数" onFocus="get(this)" onBlur="lost(this)"
+                style="color:#999; position: absolute;left:50%;top: 34%; font-size: 1.3em;width: 45vh;    -webkit-transform: translate3d(-50%,0,0);
+        transform: translate3d(-50%,0,0);border:1px solid #5f2304;border-radius:4px; padding-left: 5%">
+
+            <div id="submit">提交</div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="js/form.js"></script>
+<script type="text/javascript" src="js/slide.js"></script>
+<script type="text/javascript" src="js/animation.js"></script>
+<script type="text/javascript" src="js/loading.js"></script>
+<script>
+
+</script>
+</html>
